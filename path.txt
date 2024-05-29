@@ -1,0 +1,13 @@
+STATIC_ROOT = os.environ.get('STATIC_ROOT', 'C:/Users/Sharmie/AIDM/AI_DungeonMaster/AI_DungeonMaster/static_root')
+
+ 'C:/Users/Sharmie/AIDM/AI_DungeonMaster/Infinite_Questmaster/templates',
+
+For my case:
+
+cd AIDM
+
+my_venv\Scripts\activate
+
+cd C:\Users\Sharmie\AIDM\AI_DungeonMaster
+
+python manage.py runserver 8080
