@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Questmaster Feedback</title>
+
+    <link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/Logo2.png' %}" alt="Infinite Questmaster Logo">
+            </a>
+            <div class="login">
+                <a href="{% url 'login' %}" class="login-link">
+                    <img src="{% static 'images/User_icon.png' %}" alt="User Icon">
+                    <span>Login</span>
+                </a>
+            </div>
+        </div> 
+
+
+    <div class="background-gradient">
+        <div class="container">
+            <form class="contact-form">
+                <h2>Send Feedback</h2>
+                <div class="form-group">
+                    <div class="column">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                </div>
+            <br><br>
+                <button type="submit" class="submit-button">Send Feedback</button>
+            </form>
+        </div>
+    </div>
+        
+    
+        <footer>
+            <p>© 2024 Infinite Questmaster</p>
+        </footer>
+    </div>
+</body>
+</html>

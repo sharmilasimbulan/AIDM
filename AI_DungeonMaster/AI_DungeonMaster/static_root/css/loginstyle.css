@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Bree Serif', serif;
+}
+
+.logo {
+    transform: scale(2.5);
+    margin-left: 55px;
+}
+
+.top-bar {
+    position: relative;
+    background-color: #1F2329;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    position: relative;
+    align-items: right;
+    width: 100px;
+    height: 30px;
+}
+
+a.login-link {
+    display: contents;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    height: 30px;
+    width: 150px;
+    padding: 0 50px;
+}
+
+.login-link img {
+    transform: scale(2.5);
+    margin-right: 15px;
+}
+
+.top-bar img {
+    width: 13%;
+    height: auto;
+    cursor: pointer;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.background-gradient {
+    background: linear-gradient(#090C20, #132923);
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 280px; /* Adjust this value based on the height of your footer */
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 80vh; /* Make the container take up the full height of the viewport */
+}
+
+.contact-form {
+    width: 500px; /* Adjust the width of the form as needed */
+    padding: 60px;
+    background-color:linear-gradient(#090C20, #132923); /* Set background color of the form */
+    border-radius: 8px; /* Add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to the form */
+}
+
+.contact-form h2 {
+    text-align: center; /* Center the "Welcome Back" message */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form groups */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%; /* Make text inputs fill the entire width of the container */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #909D41; /* Add border to the inputs */
+    border-radius: 4px; /* Add rounded corners to the inputs */
+    background-color: #242424;
+    color: #ffffff;
+}
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    min-height: 100px; /* Set minimum height */
+}
+
+.submit-button {
+    width: 100%; /* Make the button fill the entire width of the container */
+    padding: 10px;
+    background-color: #1F2329; /* Set background color of the button */
+    border: 1px solid #909D41;
+    color: #fff; /* Set text color of the button */
+    border-radius: 4px; /* Add rounded corners to the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add smooth transition for hover effect */
+}
+
+.submit-button:hover {
+    background-color: #909D41;
+    border: 1px solid #909D41; /* Change background color on hover */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(57, 57, 238); /* Set link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    background-color: #1F2329;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: static;
+    }
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Bree Serif', serif;
+}
+
+.logo {
+    transform: scale(2.5);
+    margin-left: 55px;
+}
+
+.top-bar {
+    position: relative;
+    background-color: #1F2329;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar img {
+    width: 13%;
+    height: auto;
+    cursor: pointer;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.background-gradient {
+    background: linear-gradient(#090C20, #132923);
+    color: white;
+    padding-bottom: 20px; /* Adjust this value based on the height of your footer */
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 80vh; /* Make the container take up the full height of the viewport */
+}
+
+.contact-form {
+    width: 500px; /* Adjust the width of the form as needed */
+    padding: 60px;
+    background-color:linear-gradient(#1F2329, #484e23); /* Set background color of the form */
+    border-radius: 8px; /* Add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to the form */
+}
+
+.contact-form h2 {
+    text-align: center; /* Center the "Welcome Back" message */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form groups */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buttons a {
+    margin: 0 20px;
+    padding: 10px 20px;
+    background-color: #1F2329;
+    border: 1px solid #909D41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #484e23;
+    border: 1px solid #484e23;
+}
+
+.button-line {
+    width: 60%;
+    height: 3px;
+    background-color: #909D41;
+    margin: 20px auto;
+}
+
+
+.characters,
+.stories,
+.settings {
+    margin: 0 20px;
+    padding: 10px 20px;
+    background-color: #1F2329; /* Change color as needed */
+    border: 1px solid #909D41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add smooth transition for hover effect */
+}
+
+.characters:hover,
+.stories:hover,
+.settings:hover {
+    background-color: #909D41; /* Change color as needed */
+    border: 1px solid #909D41;
+}
+
+/* Styles for the container */
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styles for each card */
+.card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adjust margin-bottom for spacing between cards */
+}
+
+/* Styles for each box inside a card */
+.box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Styles for the content box */
+.box1 {
+    flex-grow: 1;
+}
+
+/* Adjust margin-right for space between icon and text */
+.icon {
+    margin-right: 10px; /* Adjust margin-right for space between icon and text */
+    width: 11px;
+    height: auto;
+}
+
+/* Styles for the two-column layout */
+.box1 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Styles for the text in the two-column layout */
+.box1 > div > p {
+    font-size: 10px;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    background-color: #1F2329;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: static;
+    }
+}

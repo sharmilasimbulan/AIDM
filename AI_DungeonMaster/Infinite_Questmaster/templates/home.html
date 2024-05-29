@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Questmaster</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/feedback.css' %}">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top-bar">
+            <a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/Logo2.png' %}" alt="Infinite Questmaster Logo">
+            </a>
+            <div class="top-bar-buttons">
+                <div class="about">
+                    <a href="{% url 'about' %}" class="about-link">
+                        About
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="{% url 'login' %}" class="login-link">
+                        <img src="{% static 'images/User_icon.png' %}" alt="User Icon">
+                        <span>Login</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Content area -->
+        <div class="background-gradient">
+            <header>
+                <img class="big-logo" src="{% static 'images/Logo.png' %}" alt="Big Logo">
+                <img class="name-logo" src="{% static 'images/Logo_Name.png' %}" alt="Name Logo">
+                <div class="buttons">
+                    <a href="#" class="start-campaign-button">Start Campaign</a>
+                    <a href="#" class="join-campaign-button">Join Campaign</a>
+                </div>
+                <div class="button-line"></div>
+            </header>
+        </div>
+
+        <!-- Feedback button -->
+        <div class="feedback-button">
+            <a href="{% url 'feedback' %}">
+                <img src="{% static 'images/feedback.png' %}" alt="Feedback Icon">
+                <span>Feedback</span>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Infinite Questmaster</p>
+        </footer>
+    </div>
+
+</body>
+</html>

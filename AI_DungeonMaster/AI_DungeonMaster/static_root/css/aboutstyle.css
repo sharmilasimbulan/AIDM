@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Bree Serif', serif;
+}
+
+.logo {
+    transform: scale(2.5);
+    margin-left: 55px;
+}
+
+.top-bar {
+    position: relative;
+    background-color: #1F2329;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    position: relative;
+    align-items: right;
+    width: 100px;
+    height: 30px;
+}
+
+a.login-link {
+    display: contents;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    height: 30px;
+    width: 150px;
+    padding: 0 50px;
+}
+
+.login-link img {
+    transform: scale(2.5);
+    margin-right: 15px;
+}
+
+.top-bar img {
+    width: 13%;
+    height: auto;
+    cursor: pointer;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.background-gradient {
+    background: linear-gradient(#090C20, #132923);
+    color: white;
+    padding-bottom: 50px; /* Adjust this value based on the height of your footer */
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+header {
+    text-align: left; /* Align the text to the left */
+    margin: 0 auto; /* Center the header horizontally */
+    max-width: 500px; /* Optionally, set a maximum width for the header */
+}
+
+.container {
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 800px; /* Optional: Set a maximum width for the container */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    background-color: #1F2329;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: static;
+    }
+}

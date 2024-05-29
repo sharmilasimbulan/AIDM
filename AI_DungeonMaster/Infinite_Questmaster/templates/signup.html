@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Questmaster Sign In</title>
+
+    <link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/Logo2.png' %}" alt="Infinite Questmaster Logo">
+            </a>
+            <div class="login">
+                <a href="{% url 'login' %}" class="login-link">
+                    <img src="{% static 'images/User_icon.png' %}" alt="User Icon">
+                    <span>Login</span>
+                </a>
+            </div>
+        </div> 
+    <div class="background-gradient">
+        <div class="container">
+            <form class="contact-form" method="POST" action="">
+                <h2>Create an Account</h2>
+                {% csrf_token %}
+                {{form.as_p}}
+                {{form.errors}}
+                <div class="form-group">
+                    <p>Already have an account? <a href="{% url 'login' %}">Log In</a></p>
+                </div>
+                <input type="submit" class="submit-button"></button>
+            </form>
+        </div>
+        
+    
+        <footer>
+            <p>© 2024 Infinite Questmaster</p>
+        </footer>
+    </div>
+</body>
+</html>

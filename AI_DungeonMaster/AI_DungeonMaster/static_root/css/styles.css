@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Bree Serif', serif;
+}
+
+.logo {
+    transform: scale(2.5);
+    margin-left: 55px;
+}
+
+.top-bar {
+    position: relative;
+    background-color: #1F2329;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.about {
+    margin-right: 30px; /* Align "About" link to the left */
+    margin-bottom: 5px;
+}
+
+.login {
+    position: relative;
+    align-items: right;
+    width: 100px;
+    height: 30px;
+}
+
+a.about-link,
+a.login-link {
+    display: contents;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    height: 30px;
+    width: 150px;
+    padding: 0 50px;
+}
+
+.login-link img {
+    transform: scale(2.5);
+    margin-right: 15px;
+}
+
+.top-bar img {
+    width: 13%;
+    height: auto;
+    cursor: pointer;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating distance */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.big-logo {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    max-width: 190px; /* Set maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 50px; /* Adjust margin as needed */
+    animation: floatAnimation 3s ease-in-out infinite; /* Apply animation */
+}
+
+.name-logo {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    max-width: 250px; /* Set maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.buttons {
+    text-align: center; /* Align buttons to the center */
+    margin-top: 80px; /* Add margin space between logo and buttons */
+}
+
+.button-line {
+    width: 60%; /* Make the line span the entire width */
+    height: 3px; /* Set the height of the line */
+    background-color: #909D41; /* Set the color of the line */
+    display: flex;
+    margin: 50px auto;
+}
+
+.start-campaign-button,
+.join-campaign-button {
+    margin-inline: 40px;
+    padding: 10px 30px;
+    background-color: #1F2329; /* Change color as needed */
+    border: 1px solid #909D41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border-radius: 10px; /* Add rounded corners to the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add smooth transition for hover effect */
+}
+
+.start-campaign-button:hover,
+.join-campaign-button:hover {
+    background-color: #909D41; /* Change color as needed */
+    border: 1px solid #909D41;
+}
+
+.background-gradient {
+    background: linear-gradient(#090C20, #132923);
+    color: white;
+    padding-bottom: 180px;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+.feedback-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.feedback-button a img {
+    width: 20px; /* Adjust icon size */
+    margin-right: 5px; /* Add space between icon and text */
+}
+
+.feedback-button a span {
+    font-size: 14px; /* Adjust font size */
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    background-color: #1F2329;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: static;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Questmaster About</title>
+
+    <link rel="stylesheet" href="{% static 'css/aboutstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/Logo2.png' %}" alt="Infinite Questmaster Logo">
+            </a>
+            <div class="login">
+                <a href="{% url 'login' %}" class="login-link">
+                    <img src="{% static 'images/User_icon.png' %}" alt="User Icon">
+                    <span>Login</span>
+                </a>
+            </div>
+        </div> 
+        <div class="background-gradient">
+            <div class="container">
+                <div class="content-box">
+                    <header>
+                        <img src="{% static 'images/logo2.png' %}" alt="Logo">
+                    </header>
+                    <form class="contact-form" method="POST" action="">
+                        <h2>How to Play</h2>
+                        <p>Welcome to Infinite Questmaster! Embark on a thrilling adventure by following these simple steps:</p>
+                        <ol>
+                            <li>Create an account and log in to start your journey.</li>
+                            <li>Explore different quests and choose one that interests you.</li>
+                            <li>Follow the quest instructions and complete the tasks to earn rewards.</li>
+                            <li>Share your progress with friends and climb the leaderboard.</li>
+                            <li>(Pakipalitan yung description)</li>
+                        </ol>
+                        <div class="columns-container">
+                            <div class="column1">
+                                <img src="{% static 'images/image1.png' %}" alt="Example" class="example-image">
+                            </div>
+                        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>© 2024 Infinite Questmaster</p>
+        </footer>
+    </div>
+</body>
+</html>

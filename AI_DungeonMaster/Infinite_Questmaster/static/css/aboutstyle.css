@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Bree Serif', serif;
+}
+
+.logo {
+    transform: scale(2.5);
+    margin-left: 55px;
+}
+
+.top-bar {
+    position: relative;
+    background-color: #1F2329;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    position: relative;
+    align-items: right;
+    width: 100px;
+    height: 30px;
+}
+
+a.login-link {
+    display: contents;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+    height: 30px;
+    width: 150px;
+    padding: 0 50px;
+}
+
+.login-link img {
+    transform: scale(2.5);
+    margin-right: 15px;
+}
+
+.top-bar img {
+    width: 13%;
+    height: auto;
+    cursor: pointer;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.background-gradient {
+    background: linear-gradient(#090C20, #132923);
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 280px; /* Adjust this value based on the height of your footer */
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 80vh; /* Make the container take up the full height of the viewport */
+}
+
+.content-box {
+    width: 500px; /* Adjust the width of the content box as needed */
+    padding: 60px;
+    background: linear-gradient(#090C20, #132923); /* Set background gradient of the box */
+    border-radius: 8px; /* Add rounded corners to the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to the box */
+}
+
+.contact-form h2 {
+    text-align: center; /* Center the "How to Play" heading */
+    font-size: 2.5em; /* Adjust font size of the h2 element */
+}
+
+.contact-form p, .contact-form ol {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.contact-form ol {
+    padding-left: 20px;
+}
+
+.columns-container {
+    display: flex;
+}
+
+.column1,
+.column2 {
+    flex: 2;
+    margin-right: 10px; /* Adjust spacing between the columns */
+}
+
+.example-image {
+    width: 100%; /* Ensure images fill their respective containers */
+    height: auto;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 98.5%;
+    background-color: #1F2329;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: static;
+    }
+}

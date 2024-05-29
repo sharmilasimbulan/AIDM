@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Questmaster Create Character</title>
+
+  
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/characterstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/Logo2.png' %}" alt="Infinite Questmaster Logo">
+            </a>
+            <div class="top-bar-buttons">
+                <div class="about">
+                    <a href="{% url 'about' %}" class="about-link">
+                        About
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="{% url 'login' %}" class="login-link">
+                        <img src="{% static 'images/User_icon.png' %}" alt="User Icon">
+                        <span>Login</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    <div class="background-gradient">
+<br><br><br><br>
+            <div class="container">
+                <form class="contact-form">
+                    <div style="margin-left: 490px;"> <!-- Adjust margin-right for space between icon and text -->
+                        <img class="icon" src="{% static 'images/arrow.png' %}" alt="icon-edit" width="22px">
+                    </div>
+                            <!-- First Column - Two Boxes -->
+                            <div style="float: left; width: 45%;">
+                                <!-- First Box -->
+                                <div class="box" style="width: 68%;">
+                                    <!-- Content for the first box (if any) -->
+                                    
+                           
+                                    <br> <br> <br> <br>
+                                </div>
+                                
+                                <br><br>
+                                <!-- Second Box -->
+                                <div class="box" style="width: 68%;">
+                                    
+                                        <p style="font-size: 15px; display: inline-block;">Back Story</p>
+                                        <img class="icon" src="{% static 'images/editing.png' %}" alt="icon-edit" style="display: inline-block;" width="10px">
+                                    <div class="button-line" style="width: 90%; height: 3px; background-color: #909D41; margin-top: -2px;"></div>
+                                    <p style="font-size: 12px; display:inline-block;">Background story of your character</p>
+                                  
+                                    <br> <br> <br> 
+                                </div>
+                            </div>
+                            
+                            <!-- Second Column -->
+                            <div style="float: left; width: 50%;">
+                                <!-- Character Name with Icon -->
+                                <div style="margin-left: 10px;"> <!-- Adjust margin-left for alignment -->
+                                    <p style="font-size: 15px; display: inline-block;">Character Name</p>
+                                    <div class="box">
+                                        <p style="font-size: 8px; display: inline-block;">Character Name</p>
+                                </div>
+                                <br>
+                                
+                                <!-- Button Line -->
+                                <div class="button-line" style="width: 110%; height: 3px; background-color: #909D41; margin-top: 5px;"></div>
+                         
+                            <div style="float: left; width: 50%;">
+                                <!-- Character Name with Icon -->
+                                 <!-- Button Line -->
+                                 
+                                <div class="button-line" style="width: 110%; height: 3px; background-color: #909D41; margin-top: 20px;">
+                            
+                            <div style="margin-left: 10px;"> <!-- Adjust margin-left for alignment -->
+                                    
+                                <p style="font-size: 15px; display: inline-block;">Inventory</p>
+                                <div class="box">
+                                    <img class="icon" src="{% static 'images/add.png' %}" alt="icon-add" style="display: inline-block;" width="10px">   <p style="font-size: 15px; display: inline-block;">Your items in your back pack</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                               
+                            <!-- Clear Floats -->
+                            <div style="clear: both;"></div>
+
+                            <div class="buttons">
+                                <a href="#" class="create" style="margin-left: 358px; margin-top: -10px;">
+                                    <img src="{% static 'images/add.png' %}" alt="Create" style="width: 16px; height: 18px;">Create
+                                </a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div> 
+       
+    
+    
+        <footer>
+            <p>© 2024 Infinite Questmaster</p>
+        </footer>
+        
+    </div>
+</body>
+</html>
